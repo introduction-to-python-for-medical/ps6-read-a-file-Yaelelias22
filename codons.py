@@ -1,9 +1,5 @@
 def create_codon_dict(file_path):
-    """
-
-    Args:
-      file_path:
-    """
+    
     path = "/content/data/codons.txt"
     file = open(path, "r")
     rows = file.readlines()
