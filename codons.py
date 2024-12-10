@@ -1,10 +1,8 @@
 def create_codon_dict(file_path):
     
-    path = "/content/data/codons.txt"
-    file = open(path, "r")
+    file = open(file_path)
     rows = file.readlines()
     file.close()
-    rows
 
     aadict = {}
     for row in rows:
@@ -12,7 +10,6 @@ def create_codon_dict(file_path):
         codon = cells [0]
         amino_acid = cells [2]
         aadict[codon] = amino_acid 
-               
-    aadict 
+    return aadict
 
 
